@@ -1,0 +1,156 @@
+html, body {
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    margin-top: 0px;
+    padding: 10px 10px;
+    font-family: sans-serif;
+    color: white;
+    margin: 10px 0;
+}
+
+footer{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.text-footer{
+    margin: 20px 10px;
+}
+
+.header{
+    font-weight: bold;
+}
+
+.main{
+    margin-bottom: 40px;
+}
+
+.home{
+    margin: 50px 0;
+}
+
+.home-header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 50px 0 100px 0;
+}
+
+.kolom{
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.pembungkus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navigasi-brand:hover{
+    background: transparent;
+}
+
+
+a:hover{
+    color: black;
+    text-decoration: none;
+    background: white;
+    border-radius: 10px;
+}
+
+.navigasi{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.navigasi-link{
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.navigasi-brand{
+display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.footer{
+    margin: 10px 0;
+    
+}
+
+@media only screen and (max-width: 768px){
+    .home{
+        position: inherit;
+        transform: none;
+        margin: 20px 0;
+    }
+    
+    .main{
+        margin-bottom: 20px;
+    }
+    
+    h1{
+        font-size: 2rem;
+        
+    }
+    .pembungkus{
+        flex-wrap: wrap;
+        margin: 0 10px;
+        display: block;
+    }
+}
+
+body {
+background: linear-gradient(270deg, #ff0000, #000000, #1100ff);
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 14s ease infinite;
+-moz-animation: AnimationName 14s ease infinite;
+animation: AnimationName 14s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
