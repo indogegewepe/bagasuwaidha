@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id" style="margin-top: 0px;">
+<html lang="id">
     <head>
         <meta charset="utf-8">
         <title>Bagas Uwaidha</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css.css">
         <link rel="icon" href="favicon.ico">
@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <!-- navbar -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <nav class="navigasi navbar-light">
             <a data-aos="zoom-in" data-aos-duration="2000" class="navigasi-brand" href="#">
                 <img src="Kantor%20bunder.png" width="50" height="50" alt="Perkantoran.com">
@@ -32,9 +32,6 @@
               </li>
             </ul>
         </nav>
-        
-        <!-- isi -->
-    
         <div class="home">
             <div class="main">
                 <div data-aos="fade-down" class="col-xl-10">
@@ -47,7 +44,7 @@
         </div>
         
         <div class="pembungkus" id="about">
-            <div class="kolom" id="font"><strong>Quotes</strong><br>
+            <div class="kolom" id="font"><div data-aos="fade-right"><strong>Quotes</strong></div><br>
             <blockquote>
                 <div data-aos="fade-left">
                     <p>Everything should be made as simple as possible, but not simpler.</p>
@@ -77,7 +74,7 @@
                 <p>If you'd like to start a new project, need help with an existing project or have any other enquiry, please get in touch.</p>
             </div>
             <div class="pembungkus">
-                <div class="kolom"><strong>Social</strong><br>
+                <div class="kolom"><div data-aos="flip-down"><strong>Social</strong></div><br>
                     <a data-aos="flip-up" href="https://www.facebook.com/bagas.uwaidha.1/" class="navigasi-brand" target="_blank"><img src="logo/fb%20white.png"></a>
                     <a data-aos="flip-down" href="https://www.instagram.com/indo_gegewepe/" class="navigasi-brand" target="_blank"><img src="logo/ig%20white.png"></a>
                     <a data-aos="flip-up" href="https://api.whatsapp.com/send?phone=+628893335061&text=Hallo" class="navigasi-brand" target="_blank"><img src="logo/wa%20white.png"></a>
@@ -99,9 +96,28 @@
             </div>
         </div>
         <footer><strong>&copy; Bagas Uwaidha 2020.</strong><br>All rights reserved.</footer>
-        
         <script>
             AOS.init();
-          </script>
+            
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
 </body>
 </html>
