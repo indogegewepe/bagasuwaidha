@@ -53,6 +53,10 @@ footer{
     max-width: 100%;
 }
 
+#font{
+    font-family: serif
+}
+
 .pembungkus{
     display: -webkit-box;
     display: -ms-flexbox;
