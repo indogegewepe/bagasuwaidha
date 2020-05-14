@@ -1,0 +1,264 @@
+*{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("fog-4969649_1920.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000, transparent);
+    pointer-events: none;
+}
+
+.banner:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg, #000, transparent);
+    pointer-events: none;
+}
+
+.height100p {
+    height: 100vh;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.contentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.container h1,
+.container p,
+.container h3 {
+    color: white;
+}
+
+header {
+    position: relative;
+    z-index: 1000000;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.footer p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding: 15px 0;
+}
+
+.navbar{
+    background: transparent !important;
+    transition: 0.5s;
+}
+
+.navbar.scrolled {
+    background: #000 !important;
+    transition: 0.5s;
+}
+
+a {
+    color: #000 !important; 
+}
+
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #000 !important;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #000 !important;
+    background: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: #000;
+}
+
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.contentBox h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.contentBox p {
+    font-size: 1.3rem;
+}
+
+.sec1 {
+    position: relative;
+    padding: 100px 0;
+    background: #000;
+    height: 100vh;
+}
+
+.sec1 .container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    color: white;
+}
+
+.container h2 {
+    color: white;
+    font-size: 2,5rem;
+}
+
+.sec2 {
+    position: relative;
+    background-image: url("green-5124174.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.sec2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000, transparent);
+    pointer-events: none;
+}
+
+.sec2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(360deg, #000, transparent);
+    pointer-events: none;
+}
+
+form label{
+    color: white;
+}
+
+.footer p {
+    background: #000;
+    color: white;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.card-header h4 {
+    margin-bottom: 0;
+}
+
+.cpyt {
+    text-align: center;
+    font-size: 1.1rem;
+    background: black;
+    color: rgb(202, 202, 202);
+    padding: 15px 0; 
+    font-weight: 600;
+}
+
+@media (min-width: 786px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 786px) {
+    .navbar-light .navbar-toggler{
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .card-body {
+        padding: 1rem;
+        align-self: center;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .banner{
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .contentBox h1{
+        font-size: 2rem;
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:visited {
+        font-size: 2rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .sec2 {
+        height: 120vh;
+    }
+}

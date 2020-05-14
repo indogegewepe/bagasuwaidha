@@ -5,20 +5,20 @@
         <title>Bagas Uwaidha</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css.css">
         <link rel="icon" href="favicon.ico">
     </head>
-    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark">
-        <a class="navbar-brand" href="#">
-          <img src="Medium Violet Persegi Real Estat Logo tr.png" width="auto" height="100" alt="Bagas Uwaidha">
-        </a>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <a class="navbar-brand" href="#home">Bagas Uwaidha</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse sticky-top justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#x">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#quotes">Quotes</a>
@@ -29,17 +29,21 @@
           </ul>
         </div>
       </nav>
-        <div class="jumbotron jumbotron-fluid bg-secondary text-white" style="margin-bottom: 0px;">
-          <div data-aos="zoom-in" class="container">
-            <h1>First, let me introduce myself, My Name is Bagas Uwaidha. I graduated from SMAN 1 Gubug. a freelance front-end developer based in Grobogan, Central Java, Indonesia.</h1>
-            <p class="lead">I was born in Grobogan on July 12th 2002. I am currently living in Grobogan. That’s all I can say about myself. Thank you.</p>
+        <div class="jumbotron jumbotron-fluid height100p banner" style="margin-bottom: 0px;" id="home">
+          <div data-aos="zoom-in" class="container h100">
+            <div class="contentBox h100">
+              <div>  
+                <h1>Hi, everyone</h1>
+                <p>First, let me introduce myself, My Name is Bagas Uwaidha. I graduated from SMAN 1 Gubug. a freelance front-end developer based in Grobogan, Central Java, Indonesia. I was born in Grobogan on July 12th 2002. I am currently living in Grobogan.</p>
+              </div>
+            </div>
           </div>
         </div>
-      <div class="container-fluid bg-dark text-light" style="padding-top: 15px;padding-bottom: 15px;">
+      <section class="sec1" id="quotes">
         <div class="container">
           <div class="row">
-            <div class="col-md">
-              <h3 data-aos="fade-right" id="quotes">Quotes</h3>
+            <div class="col">
+              <h2 data-aos="fade-right">Quotes</h2>
               <blockquote data-aos="fade-right" class="blockquote">
                 <p class="mb-0">Everything should be made as simple as possible, but not simpler.</p>
                 <footer class="blockquote-footer"><cite title="https://www.brainyquote.com/quotes/albert_einstein_103652">Albert Einstein</cite></footer>
@@ -47,62 +51,99 @@
                 <footer class="blockquote-footer"><cite title="https://www.defprogramming.com/quotes-by/john-johnson/">John Johnson</cite></footer>
               </blockquote>
             </div>
-            <div class="col-md">
-              <h3 data-aos="fade-left">Language</h3>
+            <div class="col">
+              <h2 data-aos="fade-left">Language</h2>
               <ul data-aos="fade-left">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Javascript</li>
-                <li>Jquery</li>
-                <li>PHP</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2 data-aos="fade-left">Platform</h2>
+              <ul data-aos="fade-left">
+                <li>Responsive Web</li>
+                <li>Animation</li>
+                <li>Very Fast</li>
+                <li>Very Smooth</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2 data-aos="fade-left">Platform</h2>
+              <ul data-aos="fade-left">
+                <li>Visual Studio Code</li>
+                <li>Python</li>
+                <li>Angular</li>
+                <li>Animate On Scroll</li>
                 <li>Bootstrap 4</li>
+                <li>Atom</li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="container bg-white" style="padding-top: 15px;padding-bottom: 15px;">
-        <div class="row">
-            <div class="col" id="contact">
-              <h3 data-aos="zoom-in-up">Let's make something amazing together</h3>
-              <p data-aos="zoom-in-up">If you'd like to start a new project, need help with an existing project or have any other enquiry, please get in touch.</p>
+      <section class="sec2" id="contact" style="padding-top: 100px;">
+        <div class="container " style="padding-top: 15px;padding-bottom: 15px;">
+          <div class="row">
+              <div class="col" style="text-align: center;">
+                <h2 data-aos="zoom-in-up">Let's make something amazing together</h2>
+                <p data-aos="zoom-in-up">If you'd like to start a new project, need help with an existing project or have any other enquiry, please get in touch.</p>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row" style="padding-bottom: 15px;">
-            <div class="col">
-              <h3 data-aos="flip-up">Social</h3>
-              <div data-aos="flip-up">
-                <a href="https://www.facebook.com/bagas.uwaidha.1/" class="navigasi-brand" target="_blank"><img src="logo/fb%20black.png"></a>
-                <a href="https://www.instagram.com/indo_gegewepe/" class="navigasi-brand" target="_blank"><img src="logo/ig%20black.png"></a>
-                <a href="https://api.whatsapp.com/send?phone=+628893335061&text=Hallo" class="navigasi-brand" target="_blank"><img src="logo/wa%20black.png"></a>
-                <a href="https://www.youtube.com/channel/UCLO-9nUDXZbYZqtqhlq_1fw?view_as=subscriber" class="navigasi-brand" target="_blank"><img src="logo/youtube%20black.png"></a>
-                <a href="https://goo.gl/maps/fy1QxrE1B7PBkZE86" class="navigasi-brand" target="_blank"><img src="logo/maps%20black.png"></a>
+          <div class="container">
+            <div class="card mx-auto" style="width: 100%;">
+              <div class="card-header"><h4>Social</h4></div>
+              <div class="card-body">
+                <h5 class="card-title">Get in Touch</h5>
+                <a data-aos="flip-up" href="https://www.facebook.com/bagas.uwaidha.1/" class="navigasi-brand"
+                  target="_blank"><img src="logo/fb%20black.png"></a>
+                <a data-aos="flip-down" href="https://www.instagram.com/indo_gegewepe/" class="navigasi-brand"
+                  target="_blank"><img src="logo/ig%20black.png"></a>
+                <a data-aos="flip-up" href="https://api.whatsapp.com/send?phone=+628893335061&text=Hallo"
+                  class="navigasi-brand" target="_blank"><img src="logo/wa%20black.png"></a>
+                <a data-aos="flip-down"
+                  href="https://www.youtube.com/channel/UCLO-9nUDXZbYZqtqhlq_1fw?view_as=subscriber"
+                  class="navigasi-brand" target="_blank"><img src="logo/youtube%20black.png"></a>
+                <a data-aos="flip-up" href="https://goo.gl/maps/fy1QxrE1B7PBkZE86" class="navigasi-brand"
+                  target="_blank"><img src="logo/maps%20black.png"></a>
+              </div>
+            </div>
+          <div class="row text-dark">
+              <div data-aos="zoom-out" class="col">
+                <form>
+                  <div class="form-group" style="padding-top: 15px;">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn btn-light btn-lg btn-block">Submit</button>
+                </form>
               </div>
             </div>
           </div>
-        <div class="row text-dark">
-            <div data-aos="zoom-out" class="col" style="padding-bottom: 15px;">
-              <form><div class="form-group">
-                  <label for="exampleFormControlInput1">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-              <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Comment:</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              <button type="submit" class="btn btn-dark btn-lg btn-block">Submit</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
-    <div data-aos="zoom-in-up" class="jumbotron text-center bg-dark text-white" style="margin-bottom:0">
-        <p><strong>© Bagas Uwaidha 2020.</strong></p>
-      </div>
+      </section>
+      <section class="sec3">
+        <div data-aos="zoom-in-up" class="cpyt">
+          © Bagas Uwaidha 2020.
+        </div>
+      </section>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/b9fbc0251e.js" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        $(document).scroll(function(){
+          $('.navbar').toggleClass('scrolled', $(this).
+            scrollTop() > $('.navbar').height());
+        });
+      </script>
     </body>
 </html>
