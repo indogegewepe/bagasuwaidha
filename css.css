@@ -94,6 +94,24 @@ a {
     color: #000 !important; 
 }
 
+.nav-link {
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.nav-link:hover{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
@@ -115,13 +133,6 @@ a {
     color: #000;
 }
 
-
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus,
@@ -141,26 +152,12 @@ a {
     font-size: 1.3rem;
 }
 
-.sec1 {
-    position: relative;
-    padding: 100px 0;
-    background: #000;
-    height: 100vh;
-}
-
-.sec1 .container {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
 ul{
     color: white;
 }
 
 .container h2 {
     color: white;
-    font-size: 2,5rem;
 }
 
 .sec2 {
@@ -203,12 +200,47 @@ form label{
     color: white;
 }
 
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+}
+
 .card-header {
-    background-color: white;
+    color: white;
+}
+
+.card-title {
+    color: white;
 }
 
 .card-header h4 {
     margin-bottom: 0;
+}
+
+.form-control{
+    background-color: rgba(0, 0, 0, 0.8);
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+}
+
+.form-control:focus{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.151);
+}
+
+.btn-light {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-light:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .cpyt {
@@ -225,11 +257,15 @@ form label{
         padding-right: 1rem;
         padding-left: 1rem;
     }
+
+    ul {
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 786px) {
     .navbar-light .navbar-toggler{
-        background: #fff;
+        background: rgba(255, 255, 255, 0.082);
         border-radius: 5px;
     }
 
@@ -246,9 +282,12 @@ form label{
         min-height: 100vh;
         padding: 100px 0;
     }
-    .contentBox h1{
+    .contentBox h1 {
+        font-weight: 800;
+        text-transform: uppercase;
         font-size: 2rem;
     }
+
     .navbar-light .navbar-brand,
     .navbar-light .navbar-brand:hover,
     .navbar-light .navbar-brand:focus,
