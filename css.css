@@ -47,8 +47,8 @@ body{
     top: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("compass-5137269.jpg");
-    background-color: #cccccc;
+    background-image: url("compass-5137269.png");
+    background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,11 +221,12 @@ ul.a {
 
 .sec2 {
     position: relative;
+    background: #000;
     background-image: url("green-5124174.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 105vh;
 }
 
 .sec2:before {
@@ -306,8 +307,9 @@ form label{
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
+.btn-light:focus,
 .btn-light:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8) !important;
     border: none;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
